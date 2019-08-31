@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta name="viewport" content="width=device-width">
+<title>정보통신!</title>
+<style>
+A:link { /* 링크 걸린 파일 링크 색 */
+	text-decoration:none; 
+	color:white;
+}
+A:visited { /* 한번 다녀간 링크 색 */
+	text-decoration:none; 
+	color:white;
+}
+
+body {
+	background-image: url('background.jpg');
+	background-size:  100%;
+	height: 100%;
+}
+
+
+/* Feature */
+
+	.features {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		margin-bottom: 2em;
+	}
+
+	.feature {
+		padding: 2em 2em 0.1em 2em;
+		border-style: solid;
+		border-radius: 3%;
+		border-width: 2px;
+		margin-left: 10px
+		margin-top: 10px;
+		width: 22%;
+		height: 15%;
+		text-align: center;
+		transform: translateY(90%);
+		background: #D3CCE3;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+	}
+	
+		.feature h2 {
+			color: black;
+		}
+		.feature p {
+			color : #ffffff;
+		}
+		
+
+		.feature .fa {
+			font-size: 2.8em;
+			margin-bottom: 0.7em;
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			.feature {
+				padding: 2em 1.5em 0.1em 1.5em;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.feature {
+				padding: 2em 1em 0.1em 1em;
+				width: 50%;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.feature {
+				padding: 2em 0.5em 0.1em 0.5em;
+				width: 100%;
+			}
+
+		}
+
+	.feature {
+		border-color: #e3e3e3;
+	}
+
+		.feature .fa {
+			color: #00cdcf;
+		}
+
+.clear {
+	clear: both;
+}
+
+header {
+	height: 6em;
+	margin: -10px -10px -0 -10px;
+	border: solid 1px;
+	background: #50C9C3;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #96DEDA, #50C9C3);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #96DEDA, #50C9C3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	opacity: 0.7
+}
+
+header.major {
+			margin-bottom: 4em;
+		}
+
+
+nav {
+	width: 995px;
+	height: 70px;
+	margin-top: 10px;
+	border: solid 1px green;
+}
+
+section {
+	height: 400px;
+	border: solid 1px;
+	margin: 0 -10px 0 -10px;
+	opacity: 0.9;
+	
+}
+
+aside {
+	width: 290px;
+	height: 240px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 29px;
+	border: solid 1px green;
+}
+
+footer {
+	height: 100%;
+	border: solid 0px;
+	margin: 180em -9px -10px -9px;
+	background: #1F1C2C;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #928DAB, #1F1C2C);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #928DAB, #1F1C2C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	opacity: 0.8;
+	
+}
+
+#logo {
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
+	border-radius: 50%;
+}
+
+#menu {
+	float: right;
+	margin-right: 20px;
+	border: solid 1px red;
+}
+	
+#main_name {
+	display: inline;
+	float: left;
+	margin-left: 20px;
+	margin-top: 32px;
+	width: 140px;
+}
+
+#header_ {
+	float: right;
+	margin-top: 10px;
+	margin-right: 30px;
+}
+
+
+#main {
+	margin-top: 200px;
+	border: 0;
+	float: center;
+}
+#main h1 {
+	color: white;
+}
+
+#bottom {
+	text-align: center;
+	color: white;
+	margin-top: 9em;
+}
+
+
+</style>
+</head>
+<body>
+
+<header>
+	<h2 id='main_name' > JH's web <h2>
+	<div id=header_>
+		<a href='main.html'>메인으로</a>
+	</div>
+</header>
+
+
+<section id = 'main'>
+	<center>
+		<h1> 사는 곳</h1>
+			<img src="https://w.namu.la/s/4f0da0150dfa6e1f7e513a215e1af683afdfb4ac3f8623b0549dbdd3d215165b7d7f6de44fe8910beae62f129de38fae4063dbe9ceb408c5d4208151e0f50532fede4e150962d0909af03efa15ce6def49d43b4dfc81eba61668819a23917f9d" width = 1000em>
+		
+		<h1><br><br><br><br>다니는 곳</h1>
+			<img src="https://w.namu.la/s/942b148b6f48b7de9952b33236f6df4a15fcd371a665032009619d408f5b02cb99615e378db303561b58eb12b2e41e035e3ef33dbf9701489e22f75c5f81a58f112a6ff1f31c8c3f9cc9c835535af4bfdb1ccc4321cdee6e1220f3ba69a4dd86" width = 1000em>
+		<div>
+			<h1><br><br> 동아리 </h1>
+				<img src="https://scontent-icn1-1.xx.fbcdn.net/v/l/t31.0-8/17191981_250402078704564_311272516680520466_o.png?_nc_cat=102&_nc_oc=AQntSdKeMYTNvFKz8xNLWz8zPeTumz0vMdCU82XNrL9ZotG5CzqLMkYv4CyrK6SHMww&_nc_ht=scontent-icn1-1.xx&oh=ad8c2d49def9c595784c8051169050dd&oe=5DC909C7" width = 1000em> 
+			
+			<h1><br><br><br><br> 하는일 </h1>
+				<a href="https://dimigo.in/"><img src="dimigoin.png" width = 1000em></a>
+			
+			<h1><br><br><br><br><br><br>연락처 </h1>
+				<h1><br>이메일 : nahjh2@naver.com &emsp;</h1>
+				<h1>깃 : <a href = "https://github.com/hd1534">https://github.com/hd1534</a></h1>
+			</div>
+	</center>
+</section>
+
+
+<footer>
+	<div class="inner">
+		<div class="features">
+			<div class="feature">
+				<a href='who_is_he.html'>
+					<h2>JH가 누구지?</h2>
+					<p>간단한 소개</p>
+				</a>
+			</div>
+			<div class="feature">
+				<a href='favorite.html'>
+					<h2>좋아하는 일</h2>
+					<p>게임!</p>
+				</a>
+			</div>
+			<div class="feature">
+				<a href='works.html'>
+					<h2>하고 있는 일</h2>
+					<p>디미고인 !</p>
+				</a>
+			</div>
+			<div class="feature">
+				<a href='want_to_do.html'>
+					<h2>앞으로 하고 싶은일</h2>
+					<p>IT 관련</p>
+				</a>
+			</div>
+			<div class="feature">
+				<a href='page_info.html'>
+					<h2>페이지 정보</h3>
+					<p>이 페이지를 어떻게 구축했는지</p>
+				</a>
+			</div>
+		</div>
+		<div id = 'bottom'>
+			<h2>2019 Data Communication &nbsp;by JH</h2>
+		</div>
+	</div>
+</footer>
+
+
+</body>
+</html>
