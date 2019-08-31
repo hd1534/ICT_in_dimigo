@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset='utf-8'>
-<title>layout</title>
+<title>정보통신!</title>
 <style>
 A:link { /* 링크 걸린 파일 링크 색 */
 	text-decoration:none; 
@@ -14,43 +14,87 @@ body {
 	background-size:  100%;
 }
 
-.feature {
+
+/* Feature */
+
+	.features {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		margin-bottom: 2em;
+	}
+
+	.feature {
+		padding: 2em 2em 0.1em 2em;
 		border-style: solid;
 		border-color: green;
 		border-width: 1px;
 		margin-left: -1px;
 		margin-top: -1px;
-		width: 25%;
+		width: 22%;
 		height: 15%;
 		text-align: center;
 		transform: translateY(100%);
 		background: #D3CCE3;  /* fallback for old browsers */
 		background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
 		background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
 	}
 
-.features {
-	display: -moz-flex;
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
-	-moz-flex-wrap: wrap;
-	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-moz-justify-content: center;
-	-webkit-justify-content: center;
-	-ms-justify-content: center;
-	justify-content: center;
-	margin-bottom: 2em;
-}
+		.feature .fa {
+			font-size: 2.8em;
+			margin-bottom: 0.7em;
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			.feature {
+				padding: 2em 1.5em 0.1em 1.5em;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.feature {
+				padding: 2em 1em 0.1em 1em;
+				width: 50%;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.feature {
+				padding: 2em 0.5em 0.1em 0.5em;
+				width: 100%;
+			}
+
+		}
+
+	.feature {
+		border-color: #e3e3e3;
+	}
+
+		.feature .fa {
+			color: #00cdcf;
+		}
 
 .clear {
 	clear: both;
 }
 
 header {
-	height: 100px;
+	height: 6em;
 	margin: -10px -10px -0 -10px;
 	border: solid 1px;
 	background: #50C9C3;  /* fallback for old browsers */
@@ -89,7 +133,7 @@ aside {
 }
 
 footer {
-	height: 400px;
+	height: 30em;
 	border: solid 0px;
 	margin: 0 -10px -10px -10px;
 	background: #1F1C2C;  /* fallback for old browsers */
@@ -127,9 +171,9 @@ footer {
 }
 
 #main_h {
-	margin-top: 80px;
+	margin-top: 200px;
 	text-align:center;
-	color: red;
+	color: white;
 }
 
 
@@ -138,50 +182,51 @@ footer {
 <body>
 
 <header>
-	<img id = logo  src='ferrari.jpg' width = 100>
 	<h2 id='main_name' > JH's web <h2>
 	<div id=header_>
-		<a href='main.html'>메인으로</a> | <a href=''>내가 좋아하는거</a> | <a href=''>좋아하는 게임</a> | <a href=''>기타등등</a> | <a href=''>자기소개</a>
+		<a href='main.html'>메인으로</a>
 	</div>
 </header>
 
 
 <section>
-	<h1 id=main_h>한줄소개 : 이 페이지는 정보통신 수행평가를 위핸 페이지 입니다!</h1>
+	<h1 id=main_h>한줄소개 : 이 페이지는 정보통신 수행평가를 위한 페이지 입니다!</h1>
 </section>
 
 
 <footer>
-	<div class="features">
-		<div class="feature">
-			<a href='pages/cando.html'>
-				<h3>할 줄 아는 일</h3>
-				<p>할 수 있는 언어들</p>
-			</a>
-		</div>
-		<div class="feature">
-			<a href='pages/works.html'>
-				<h3>하고 있는 일</h3>
-				<p>공부 내용들</p>
-			</a>
-		</div>
-		<div class="feature">
-			<a href='pages/todo.html'>
-				<h3>해야 할 일</h3>
-				<p>안하면 안되는 일</p>
-			</a>
-		</div>
-		<div class="feature">
-			<a href='pages/liketodo.html'>
-				<h3>좋아하는 일</h3>
-				<p>잘 할수도 있는 일</p>
-			</a>
-		</div>
-		<div class="feature">
-			<a href='pages/private.html'>
-				<h3>개인 정보</h3>
-				<p>및 메모</p>
-			</a>
+	<div class="inner">
+		<div class="features">
+			<div class="feature">
+				<a href='pages/cando.html'>
+					<h3>할 줄 아는 일</h3>
+					<p>할 수 있는 언어들</p>
+				</a>
+			</div>
+			<div class="feature">
+				<a href='pages/works.html'>
+					<h3>하고 있는 일</h3>
+					<p>공부 내용들</p>
+				</a>
+			</div>
+			<div class="feature">
+				<a href='pages/todo.html'>
+					<h3>해야 할 일</h3>
+					<p>안하면 안되는 일</p>
+				</a>
+			</div>
+			<div class="feature">
+				<a href='pages/liketodo.html'>
+					<h3>좋아하는 일</h3>
+					<p>잘 할수도 있는 일</p>
+				</a>
+			</div>
+			<div class="feature">
+				<a href='pages/private.html'>
+					<h3>개인 정보</h3>
+					<p>및 메모</p>
+				</a>
+			</div>
 		</div>
 	</div>
 </footer>
