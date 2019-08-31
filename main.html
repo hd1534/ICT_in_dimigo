@@ -24,6 +24,9 @@ body {
 		height: 15%;
 		text-align: center;
 		transform: translateY(100%);
+		background: #D3CCE3;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	}
 
 .features {
@@ -123,6 +126,12 @@ footer {
 	margin-right: 30px;
 }
 
+#main_h {
+	margin-top: 80px;
+	text-align:center;
+	color: red;
+}
+
 
 </style>
 </head>
@@ -138,7 +147,7 @@ footer {
 
 
 <section>
-	메인 콘텐츠
+	<h1 id=main_h>한줄소개 : 이 페이지는 정보통신 수행평가를 위핸 페이지 입니다!</h1>
 </section>
 
 
