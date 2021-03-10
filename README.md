@@ -1,7 +1,7 @@
 # ICT_in_dimigo
 2학년 2학기 정보통신시간 수행평가 입니다.
 
-https://hd1534.github.io/ICT_in_dimigo/main.html
+[https://hd1534.github.io/ICT_in_dimigo/main.html](https://hd1534.github.io/ICT_in_dimigo/main.html)
 
 
 ```
